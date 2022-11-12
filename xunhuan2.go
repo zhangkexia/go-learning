@@ -1,14 +1,18 @@
 package main
+
 import "fmt"
 
-func main(){
-	strings := []string{"google", "runoob"}
-	for i, s := range strings {
-		fmt.Println(i, s)
-	}
+func main() {
+    sum :=1
+    for ; sum <= 10; {
+        sum += sum
+    }
+    fmt.Println(sum)
 
-	numbers := [6]int{1, 2, 3, 5}
-	for i, x := range numbers {
-		fmt.Printf("the %d th x value is : %d\n", i, x)
-	}
+    //  也可以这样写
+    for sum <= 10 {
+        sum += sum
+    }
+
+    fmt.Println(sum)
 }
